@@ -17,6 +17,7 @@ CSharp implementation for a general purpose, single-thread and single-active-sta
 ## API - Build up the machine
 #### State (Abstract class)
 A general state in a state machine. It can be a simple state or another state machine
+
 **events**
 - **StateEnter**: Fired before entering this state
 - **StateLeave**: Fired before leaving this state
@@ -24,11 +25,13 @@ A general state in a state machine. It can be a simple state or another state ma
 *Note: In a general state transition, StateLeave will always be fired before StateEnter*
 #### SimpleState : State
 A basic state which cannot be sub-divided
+
 **events**
 - *StateEnter*: Inherited from State
 - *StateLeave*: Inherited from State
 #### StateMachine : State
 A state machine is also a state
+
 **events**
 - *StateEnter*: Inherited from State
 - *StateLeave*: Inherited from State
