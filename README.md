@@ -7,7 +7,7 @@ CSharp implementation for a general purpose, single-thread and single-active-sta
 - State transition event system to support actions on various time slot
 - Epsilon transition supported
 - Allow pre-validating and cancelling state transition
-- Allow state recovery from a string descriptor 
+- Allow state backup and state recovery using a string descriptor 
 
 ## Usage (temp)
 1. Download source code and compile as class library
