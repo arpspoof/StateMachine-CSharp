@@ -1,5 +1,5 @@
 # StateMachine-CSharp
-CSharp implementation for a general purpose single-active-state state machine
+CSharp implementation for a general purpose, single-thread and single-active-state state machine
 
 ## Features
 - Basics: Creating state machine, add states to state machine, allow usage of Trigger to drive state transition
