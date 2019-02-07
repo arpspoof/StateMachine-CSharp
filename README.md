@@ -45,6 +45,8 @@ Triggers are used to drive state transition. For each connecting edge between on
 - **BeforeTransition**: Fired before the trigger is going to drive a state transition
 - **AfterTransition**: Fired after the trigger drived a state transition
 
+*Note: In your App code, the general usage of Trigger will be: New the trigger, connect states using the trigger, then maintain when to fire the trigger in your App code*
+
 #### Methods of StateMachine to build up transitions
 - **AddState(State)**: Add a state and return state id. The id is used to add transitions
 - **AddEntryTransition(int, Trigger)**: Add an edge from the entry point to some inner state. The state machine will be initialized in entry point when it starts to run. 
