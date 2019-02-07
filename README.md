@@ -35,7 +35,7 @@ A state machine is also a state
 
 *Note: Inner state machine will start running after entering this state and will exit before leaving*
 ## API - Transitions
-#### Trigger
+#### TransitionTrigger
 Triggers are used to drive state transition. For each connecting edge between one state and another, a trigger is required to determine when to do the state transition. The state transition will only be performed when the **Source State** is active **and** the trigger is fired. The trigger will have no effect when the source state is inactive. For epsilon transitions, pass **null** to the trigger parameter whenever needed
 **methods**
 - **Fire()**: Activate the trigger. If there is one transition edge using this trigger and source state is active, transition will be performed.
