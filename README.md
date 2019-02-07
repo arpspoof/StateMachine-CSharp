@@ -14,16 +14,18 @@ CSharp implementation for a general purpose single-active-state state machine
 **events**
 - **StateEnter**: Fired before entering this state
 - **StateLeave**: Fired before leaving this state
+
 *Note: In a general state transition, StateLeave will always be fired before StateEnter*
-#### SimpleState
+#### SimpleState : State
 **A basic state which cannot be sub-divided**
 **events**
 - *StateEnter*: Inherited from State
 - *StateLeave*: Inherited from State
-#### StateMachine
+#### StateMachine : State
 **A state machine is also a state**
 **events**
 - *StateEnter*: Inherited from State
 - *StateLeave*: Inherited from State
+
 *Note: Inner state machine will start running after entering this state and will exit before leaving*
 ## API - Add Transitions
